@@ -1,0 +1,224 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    color: black;
+}
+
+.avatar {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 20px;
+    left: 20px;
+    border: #000 solid 3px;
+    border-radius: 50%;
+    background-image: url('tải xuống.png');
+    background-size: cover;
+
+}
+
+.front {
+
+    background-image: url('—Pngtree—royal golden blue mandala art_1596347.jpg');
+    background-size: cover;
+    background-position: center top -12px;
+
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border: black 2px solid;
+    z-index: 2;
+
+
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    color: white;
+    width: 80%;
+}
+
+table {
+    margin-right: 50px;
+    /* Adjust spacing between tables */
+}
+
+table td {
+    text-align: center;
+
+    padding: 10px;
+
+}
+
+
+.front-info {
+
+    margin-left: 15%;
+    margin-top: 2%;
+    font-family: 'Lato';
+    color: white;
+    font-size: 20px;
+    padding: auto;
+}
+
+table td {
+    padding-right: 50px;
+
+    list-style-type: disc;
+
+
+}
+
+table td::before {
+    content: "\2022";
+}
+
+.back-info {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+
+.back-info button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+}
+
+
+
+.back {
+    background-image: url('—Pngtree—white marble texture background_1309543.jpg');
+    background-size: cover;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+
+
+    border: black 2px solid;
+    z-index: 2;
+
+
+}
+
+
+
+.flip-container,
+.front,
+.back {
+    height: 400px;
+    width: 600px;
+}
+
+
+
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+h1,
+p,
+.icons {
+    color: black;
+    font-family: 'Lato';
+    margin-left: 30%;
+    line-height: 90%;
+}
+
+h1 {
+    margin-top: 5%;
+}
+
+p {
+    font-size: 25px;
+    padding-bottom: 15px;
+    width: 35%;
+    border-bottom: 2px solid black;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.icons {
+    margin-top: 25px
+}
+
+.icon-group {
+    margin-top: 8px;
+}
+
+.icon-group a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.back .icons span,
+.back .icons a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.back .icons a:hover {
+    color: red;
+}
+
+.back .icon-box {
+    position: relative;
+    color: black;
+    font-size: 27px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    top: 75px;
+    left: 30%;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.next-info {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.next-info button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.back .icon-box:hover {
+    box-shadow: inset 0 50px 0 0 #000;
+    color: white;
+}
+
+.icon-box i {
+
+    margin-top: auto;
+}

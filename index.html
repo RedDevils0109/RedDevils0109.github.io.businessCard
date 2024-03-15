@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f43bbb52e9.js" crossorigin="anonymous"></script>
+    <title>Business Card</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="pexels_videos_1826896 (1080p).mp4" type="video/mp4">
+    </video>
+    <div class="flip-container" id="flip-container">
+
+        <div class="front">
+
+            <div class="back-info">
+                <button onclick="flipCard()"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="front-info">
+                <div class="table-container">
+
+
+                    <table>
+
+                        <caption><i class="fa-solid fa-code"></i></caption>
+                        <tr>
+                            <td>Java <i class="fa-brands fa-java"></i></td>
+                            <td>Python <i class="fa-brands fa-python"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>Javascript <i class="fa-brands fa-js"></i></td>
+                            <td>html/css <i class="fa-brands fa-html5"></i></td>
+                        </tr>
+                    </table>
+                    <hr>
+
+                    <table>
+                        <caption><i class="fa-solid fa-gear"></i></caption>
+                        <tr>
+                            <td>Reactjs</td>
+                            <td>Bootstrap</td>
+                        </tr>
+                        <tr>
+                            <td>Springboot</td>
+                            <td>Nodejs</td>
+                        </tr>
+                    </table>
+                    <hr>
+
+                    <table>
+                        <caption><i class="fa-solid fa-database"></i></caption>
+                        <tr>
+                            <td>MySQL</td>
+                            <td>MongoDB</td>
+                        </tr>
+                        <tr>
+                            <td>PostgresSQL</td>
+                            <td>AWS</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="back">
+            <div class="avatar"></div>
+            <div class="next-info">
+                <button onclick="flipCard()"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <h1>Ho Kha</h1>
+            <p>Software Engineer</p>
+
+            <div class="icons">
+                <div class="icon-group">
+                    <span class="bold"><i class="fa-solid fa-phone"></i></span>
+                    <a class="contact"> 555-555-5555</a>
+                    <div class="icon-group">
+                        <span class="bold"><i class="fa-solid fa-envelope"></i></span>
+                        <a class="contact" href="mailto:s4037882@rmit.edu.vn" target="_blank"> s4037882@rmit.edu.vn</a>
+                    </div>
+                    <div class="icon-group">
+                        <span class="bold"><i class="fa-solid fa-globe"></i></span>
+                        <a href="https://www.rmit.edu.vn/vi/hoc-tap-tai-rmit/chuong-trinh-cu-nhan/cu-nhan-cong-nghe-thong-tin#program-structure"
+                            class="contact" target="_blank"> www.rmit.edu.vn</a>
+                    </div>
+                    <div class="icon-group">
+                        <span class="bold"><i class="fa-solid fa-location-dot"></i></span>
+                        <a class="contact"
+                            href="https://www.google.com/maps/place/%C4%90%E1%BA%A1i+H%E1%BB%8Dc+RMIT+Nam+S%C3%A0i+G%C3%B2n/@10.7289515,106.6957667,15z/data=!4m6!3m5!1s0x31752fbea5fe3db1:0xfae94aca5709003f!8m2!3d10.7289515!4d106.6957667!16s%2Fm%2F04g0808?entry=ttu"
+                            target="_blank">
+                            Saigon, Vietnam</a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=100027744552694&locale=vi_VN" class="icon-box"
+                target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/__hokha__/" class="icon-box" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon-box"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon-box"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const front = document.querySelector('.front');
+
+
+            front.style.display = 'none'
+            var video = document.querySelector('#myVideo')
+            video.playbackRate = 4;
+        });
+        function flipCard() {
+            const front = document.querySelector('.front');
+            const back = document.querySelector('.back');
+
+            if (front.style.display === 'none') {
+
+                back.style.display = 'none';
+                front.style.display = 'block';
+            } else {
+
+                front.style.display = 'none';
+                back.style.display = 'block';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
