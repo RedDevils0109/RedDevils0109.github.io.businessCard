@@ -12,8 +12,8 @@ body {
     justify-content: center;
     min-height: 90vh;
     color: black;
-    background-image: url('pexels-lukas-kloeppel-466685.jpg');
-    background-size: cover;
+    /* background-image: url('pexels-lukas-kloeppel-466685.jpg');
+    background-size: cover; */
 }
 
 .avatar {
